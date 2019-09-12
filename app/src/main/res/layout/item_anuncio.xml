@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/bg_anuncio"
+    android:id="@+id/cv_anuncio_card"
+    android:padding="10dp"
+    app:cardCornerRadius="12dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_account_circle_black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/tv_anuncio_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="Dirección"
+                    android:textStyle="bold"
+                    style="@style/anuncioTitle"/>
+                <TextView
+                    android:id="@+id/tv_anuncio_hora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="Hace 1 hora"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_anuncio_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Evento de convivencia el próximo Lunes 03 de marzo a partir de las 03 de la tarde con motivo del día de la familia. Habrá comida y juegos. Lo recolectado se usará para la rehabilitación del parque escolar."/>
+
+            <ImageView
+                android:id="@+id/iv_anuncio_imagen"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+</LinearLayout>

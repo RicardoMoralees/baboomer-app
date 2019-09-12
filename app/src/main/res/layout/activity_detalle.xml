@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.DetalleActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_detalle_header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/bg_notificacion_conducta">
+
+        <ImageView
+            android:id="@+id/iv_detalle_cerrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_white"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_account_circle_black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_detalle_titulo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:text="@string/notif_title_conducta"/>
+                <TextView
+                    android:id="@+id/tv_detalle_fecha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp"
+                    android:text="hace 2 horas"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_anuncio_detalle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="100dp"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_detalle_mensaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Se le solicita al padre de familia de Elhena su asistencia con el departamento de detenciones ya que el día de hoy agredió fisicamete a un alumno de su salón de clases, provocando heridas en la cara de su compañero.
+
+Le recordamos al padre de familia que uno de los principales valores de la insitución es el respeto por lo que no se tolerará otra falta así en Elhena.
+
+Favor de reportarse a la brevedad. "/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/firma"/>
+            <TextView
+                android:id="@+id/tv_detalle_nombre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Maria Carrillo Bustamante"/>
+            <TextView
+                android:id="@+id/tv_detalle_departamento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Direccion"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+<Button
+    android:id="@+id/btn_detalle_enterado"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:text="@string/enterado"
+    android:textAllCaps="false"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginBottom="15dp"
+    android:textColor="@color/greenblue"
+    android:background="@drawable/bg_button_enterado"/>
+
+</RelativeLayout>

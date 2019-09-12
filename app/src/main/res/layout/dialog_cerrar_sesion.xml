@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Cerrar sesión"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="55dp"
+        android:layout_marginLeft="55dp"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:text="¿Estas seguro que deseas cerrar sesión?"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/btn_dialog_cancelar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancelar"
+            android:textColor="@color/greenblue"
+            android:textAllCaps="false"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_button_enterado"/>
+        <Button
+            android:id="@+id/btn_dialog_cerrar_sesion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:text="Si, cerrar sesión"
+            android:background="@drawable/bg_button_cerrar_sesion"/>
+    </LinearLayout>
+</LinearLayout>

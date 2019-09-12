@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">BaBoomer</string>
+
+    <!-- Strings related to login -->
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Ir</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">Contraseña muy corta.</string>
+    <string name="error_incorrect_password">Contraseña incorrecta</string>
+    <string name="error_field_required">Campo requerido.</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <string name="bienvenido">Bienvenido</string>
+    <string name="usuario">Usuario o correo</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+
+    <string name="home_title">Estancia infantil</string>
+
+    <string name="enterado">Enterado</string>
+
+    <string name="notif_title_enfermo">Niño enfermo</string>
+    <string name="notif_title_conducta">Reporte de conducta</string>
+    <string name="token">token</string>
+</resources>
